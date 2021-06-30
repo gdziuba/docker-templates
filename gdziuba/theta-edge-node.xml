@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <TemplateURL>https://raw.githubusercontent.com/gdziuba/docker-templates/main/binhex/theta-edge-node.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/gdziuba/docker-templates/main/gdziuba/theta-edge-node.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Downloaders:</Category>
   <Name>gdziuba-theta-edge-node.xml</Name>
