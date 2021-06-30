@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/gdziuba/docker-templates/master/binhex/theta-edge-node.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <Name>gdziuba-theta-edge-node.xml</Name>
+  <Description>
+    Put Description Here
+  </Description>
+  <Overview>
+    Put Overview Here
+  </Overview>
+  <Support></Support>
+  <Registry>https://hub.docker.com/r/thetalabsorg/edgelauncher_mainnet/</Registry>
+  <GitHub></GitHub>
+  <Repository>thetalabsorg/edgelauncher_mainnet:v1.0.0</Repository>
+  <Project>https://www.thetatoken.org/</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>15888</HostPort>
+        <ContainerPort>15888</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>17888</HostPort>
+        <ContainerPort>17888</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>EDGELAUNCHER_CONFIG_PATH</Name>
+      <Value>/edgelauncher/data/mainnet</Value>
+    </Variable>
+    <Variable>
+      <Name>PASSWORD</Name>
+      <Value>YOUR_PASSWORD</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/data/edgelauncher/data/mainnet</HostDir>
+      <ContainerDir>/.edgelauncher</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Icon></Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D.  Theta address:0x3a7c56baa63fbf72293dbe878f106d58725ec3c1</DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
