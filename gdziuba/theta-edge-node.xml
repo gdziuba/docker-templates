@@ -3,7 +3,7 @@
   <TemplateURL>https://raw.githubusercontent.com/gdziuba/docker-templates/main/gdziuba/theta-edge-node.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Downloaders:</Category>
-  <Name>gdziuba-theta-edge-node.xml</Name>
+  <Name>edgelauncher</Name>
   <Description>
     Put Description Here
   </Description>
